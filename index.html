@@ -2,7 +2,25 @@
     <head>
       <meta charset="utf-8">
         <title>Responsive Images</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
     </head>
     <body>
+      <h1>
+        <p>Test
+        </p>
+      </h1>
+
+      <h2>Grabbing photos by URL</h2>
+      <figure>
+        <picture>
+          <source srcset="https://picsum.photos/1500" media="(min-width: 1200px)" />
+          <source srcset="https://picsum.photos/1200" media="(min-width: 900px)" />
+          <source srcset="https://picsum.photos/900" media="(min-width: 500px)" />
+
+          <!-- mobile first-->
+          <img src="https://picsum.photos/g/400" alt="Picture of something from the internet" />
+        </picture>
+        <figcaption>A really cool photo!</figcaption>
+      </figure>
     </body>
 </html>
